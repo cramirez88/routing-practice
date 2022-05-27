@@ -1,14 +1,14 @@
 import React, { useParams } from "react-router-dom"
 
 const Params = () => {
-  let {word} = useParams()
+  let {word,textColor, backgroundColor} = useParams()
 
 return (
   <>
   {
     isNaN(word)? 
-  <p>The word is {word}</p>:
-  <p>The number is {word}</p>
+  <p style={{color:textColor, backgroundColor: backgroundColor}}>The word is {word}</p>:
+  <p style={{color:textColor, backgroundColor: backgroundColor}}>The number is {word}</p>
 }
   </>
 
