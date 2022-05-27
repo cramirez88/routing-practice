@@ -1,11 +1,21 @@
-import { useParams } from "react-router-dom"
+import React, { useParams } from "react-router-dom"
 
-const Word = () => {
+const Params = () => {
   let {word} = useParams()
 
-  return (
-    <p>The word is: {word}</p>
-  )
+return (
+  <>
+  {
+    isNaN(word)? 
+  <p>The word is {word}</p>:
+  <p>The number is {word}</p>
+}
+  </>
+
+ 
+)
+  
+  
 }
 
-export default Word
+export default Params
